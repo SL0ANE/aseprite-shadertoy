@@ -1,0 +1,7 @@
+{
+  "renderpass": [
+    {"name":"Common","type":"common","code":"vec3 palette(float t) { return 0.5 + 0.5*cos(t + vec3(0,2,4)); }"},
+    {"name":"Buffer A","type":"buffer","outputs":[{"id":"A"}],"inputs":[{"channel":0,"ctype":"buffer","id":"A","sampler":{"filter":"linear","wrap":"clamp"}}],"code":"void mainImage(out vec4 c, in vec2 p) { vec2 uv=p/iResolution.xy; vec2 q=0.5+0.3*vec2(cos(iTime*2.0),sin(iTime*3.0)); float d=length((uv-q)*vec2(iResolution.x/iResolution.y,1)); vec3 old=texture(iChannel0,uv).rgb*0.96; c=vec4(max(old,palette(iTime)*smoothstep(0.06,0.0,d)),1); }"},
+    {"name":"Image","type":"image","inputs":[{"channel":0,"ctype":"buffer","id":"A"}],"code":"void mainImage(out vec4 c, in vec2 p) { c=texture(iChannel0,p/iResolution.xy); }"}
+  ]
+}

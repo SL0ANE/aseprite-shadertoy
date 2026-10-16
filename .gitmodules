@@ -1,0 +1,3 @@
+[submodule "native/vendor/shaderlens"]
+	path = native/vendor/shaderlens
+	url = https://github.com/ytt0/shaderlens.git

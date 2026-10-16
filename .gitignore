@@ -1,0 +1,8 @@
+bin/
+dist/
+native/**/bin/
+native/**/obj/
+tests/output/
+native/web-renderer/
+node_modules/
+

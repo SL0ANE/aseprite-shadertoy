@@ -1,0 +1,10 @@
+{
+  "name": "aseprite-shadertoy",
+  "displayName": "Shadertoy Renderer",
+  "description": "Render Shadertoy shaders in a background GPU process into animated cels.",
+  "version": "0.1.9",
+  "author": { "name": "aseprite-shadertoy contributors" },
+  "license": "MIT",
+  "categories": ["Scripts"],
+  "contributes": { "scripts": [{ "path": "main.lua" }] }
+}

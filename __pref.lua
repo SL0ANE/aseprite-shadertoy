@@ -1,0 +1,1 @@
+return {file="C:\\Users\\Win11\\Downloads\\SL0ANE - S-Pixelart Blood VFX.zip",layerName="Shadertoy",fps=60.0,opaque=true,url="https://www.shadertoy.com/view/M3yBDW",startTime=0.0,textureDirectory="",seconds=16.0}
